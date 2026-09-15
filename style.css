@@ -1,0 +1,210 @@
+/* Bebito — legal site styles (mirrors the app's iOS-style design) */
+
+:root {
+  --background: #f2f2f7;
+  --foreground: #16181f;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --border: rgba(0, 0, 0, 0.08);
+  --primary: #3a7bf0;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
+  --radius: 18px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #14161b;
+    --foreground: #f2f3f7;
+    --card: #23262d;
+    --muted: #a4a9b4;
+    --border: rgba(255, 255, 255, 0.1);
+    --primary: #7aa8f7;
+    --shadow: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px 56px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.site-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.site-header img {
+  width: 84px;
+  height: 84px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+}
+
+.site-header p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Page header (legal pages) */
+
+.page-header {
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.page-header h1 {
+  margin: 4px 0 0;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+/* Card */
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.card .body {
+  padding: 20px 20px 24px;
+}
+
+.card h2 {
+  margin: 22px 0 6px;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.card h2:first-child {
+  margin-top: 0;
+}
+
+.card p,
+.card li {
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin: 0 0 10px;
+}
+
+.card strong {
+  color: var(--foreground);
+}
+
+a {
+  color: var(--primary);
+}
+
+.updated {
+  margin: 0;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Index list */
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li + li {
+  border-top: 1px solid var(--border);
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 18px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.links a:hover {
+  background: rgba(127, 127, 127, 0.07);
+}
+
+.links .label {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.links .desc {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.links .chev {
+  color: var(--muted);
+  flex: none;
+}
+
+footer {
+  margin-top: 26px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}

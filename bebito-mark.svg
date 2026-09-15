@@ -1,0 +1,40 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Bebito mark</title>
+  <desc>Swaddled smiling baby with mint and cream wrap, a small heart and two dots.</desc>
+  <defs>
+    <clipPath id="swaddle">
+      <path d="M512 366c94 0 158 78 158 174 0 118-70 198-158 198s-158-80-158-198c0-96 64-174 158-174Z"/>
+    </clipPath>
+  </defs>
+
+  <g stroke="#2B4257" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ears -->
+    <circle cx="392" cy="352" r="27" fill="#FFFBF2"/>
+    <circle cx="632" cy="352" r="27" fill="#FFFBF2"/>
+
+    <!-- swaddled body -->
+    <g>
+      <path d="M512 366c94 0 158 78 158 174 0 118-70 198-158 198s-158-80-158-198c0-96 64-174 158-174Z" fill="#FBE8C8"/>
+      <g clip-path="url(#swaddle)">
+        <path d="M330 340h370c0 0-14 96-96 150-70 46-150 60-190 118-26 38-84 42-84 42Z" fill="#A8D5C4"/>
+        <path d="M700 344c0 0-6 104-104 162-64 38-132 56-170 106" fill="none" stroke="#2B4257" stroke-width="17"/>
+      </g>
+      <path d="M512 366c94 0 158 78 158 174 0 118-70 198-158 198s-158-80-158-198c0-96 64-174 158-174Z" fill="none"/>
+    </g>
+
+    <!-- head -->
+    <circle cx="512" cy="352" r="122" fill="#FFFBF2"/>
+    <!-- curl -->
+    <path d="M500 242c-32 2-48 28-38 50 8 17 33 17 39 2 5-13-6-23-17-19" fill="none"/>
+        <!-- eyes -->
+    <path d="M452 350c8-16 30-16 38 0" fill="none"/>
+    <path d="M534 350c8-16 30-16 38 0" fill="none"/>
+    <!-- mouth -->
+    <path d="M482 384c14 20 46 20 60 0" fill="none"/>
+  </g>
+
+  <!-- heart + dots -->
+  <path d="M713 316c-9-13-30-9-30 8 0 14 18 24 30 34 12-10 30-20 30-34 0-17-21-21-30-8Z" fill="#F2AE92"/>
+  <circle cx="716" cy="400" r="15" fill="#8FCFC0"/>
+  <circle cx="741" cy="447" r="11" fill="#8FCFC0"/>
+</svg>
