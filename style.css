@@ -1,5 +1,13 @@
 /* Bebito — legal site styles (mirrors the app's iOS-style design) */
 
+@font-face {
+  font-family: "Baloo 2";
+  src: url("baloo-2-700.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light dark;
   --background: #fdfcf9;
@@ -85,10 +93,10 @@ body {
 
 .site-header h1 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 38px;
-  font-weight: 600;
-  line-height: 1.08;
+  font-family: "Baloo 2", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -290,7 +298,7 @@ footer a {
   }
 
   .site-header h1 {
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .links a {
