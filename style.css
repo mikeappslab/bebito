@@ -1,25 +1,30 @@
 /* Bebito — legal site styles (mirrors the app's iOS-style design) */
 
 :root {
-  --background: #f2f2f7;
-  --foreground: #16181f;
-  --card: #ffffff;
-  --muted: #6b7280;
-  --border: rgba(0, 0, 0, 0.08);
-  --primary: #3a7bf0;
-  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
-  --radius: 18px;
+  color-scheme: light dark;
+  --background: #fdfcf9;
+  --foreground: #192b3d;
+  --card: rgba(255, 255, 255, 0.72);
+  --card-solid: #ffffff;
+  --muted: #68727e;
+  --border: rgba(25, 43, 61, 0.1);
+  --primary: #34776d;
+  --primary-soft: rgba(152, 211, 194, 0.16);
+  --shadow: 0 1px 2px rgba(25, 43, 61, 0.03), 0 16px 42px rgba(25, 43, 61, 0.07);
+  --radius: 22px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #14161b;
-    --foreground: #f2f3f7;
-    --card: #23262d;
-    --muted: #a4a9b4;
-    --border: rgba(255, 255, 255, 0.1);
-    --primary: #7aa8f7;
-    --shadow: none;
+    --background: #0f1211;
+    --foreground: #f3f1eb;
+    --card: rgba(31, 35, 33, 0.78);
+    --card-solid: #1f2321;
+    --muted: #a8afa9;
+    --border: rgba(255, 255, 255, 0.09);
+    --primary: #8fd2bf;
+    --primary-soft: rgba(143, 210, 191, 0.1);
+    --shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
   }
 }
 
@@ -34,6 +39,7 @@ html {
 body {
   margin: 0;
   padding: 32px 16px 56px;
+  min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
@@ -47,30 +53,51 @@ body {
   margin: 0 auto;
 }
 
+.landing {
+  display: grid;
+  place-items: center;
+  padding-block: clamp(40px, 8vh, 76px);
+  background:
+    radial-gradient(circle at 18% 8%, rgba(242, 174, 146, 0.09), transparent 30%),
+    radial-gradient(circle at 84% 16%, rgba(143, 207, 192, 0.12), transparent 32%),
+    var(--background);
+}
+
+.landing .wrap {
+  width: min(100%, 560px);
+}
+
 /* Header */
 
 .site-header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .site-header img {
-  width: 84px;
-  height: 84px;
+  width: 112px;
+  height: 112px;
   display: block;
-  margin: 0 auto 12px;
+  margin: 0 auto 20px;
+  border-radius: 25%;
+  box-shadow: 0 12px 28px rgba(25, 43, 61, 0.12);
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 30px;
-  letter-spacing: -0.02em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0;
 }
 
 .site-header p {
-  margin: 6px 0 0;
+  max-width: 390px;
+  margin: 12px auto 0;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 /* Page header (legal pages) */
@@ -112,9 +139,12 @@ body {
 
 .card {
   background: var(--card);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
 }
 
 .card .body {
@@ -175,36 +205,116 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  padding: 15px 18px;
+  gap: 18px;
+  min-height: 79px;
+  padding: 16px 20px;
   text-decoration: none;
   color: inherit;
+  transition: background-color 180ms ease;
 }
 
 .links a:hover {
-  background: rgba(127, 127, 127, 0.07);
+  background: var(--primary-soft);
+}
+
+.links a:focus-visible,
+.back:focus-visible,
+footer a:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--primary) 42%, transparent);
+  outline-offset: -3px;
+}
+
+.link-copy {
+  min-width: 0;
 }
 
 .links .label {
-  font-weight: 600;
+  display: block;
+  font-weight: 650;
   font-size: 15px;
+  color: var(--foreground);
 }
 
 .links .desc {
   display: block;
   font-weight: 400;
+  margin-top: 2px;
   font-size: 13px;
+  line-height: 1.45;
   color: var(--muted);
 }
 
 .links .chev {
   color: var(--muted);
   flex: none;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  line-height: 1;
+  transition: transform 180ms ease, color 180ms ease;
+}
+
+.links a:hover .chev {
+  color: var(--primary);
+  transform: translateX(2px);
 }
 
 footer {
-  margin-top: 26px;
+  margin-top: 34px;
   text-align: center;
   font-size: 12px;
   color: var(--muted);
+}
+
+footer a {
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-inline: 14px;
+  }
+
+  .landing {
+    place-items: start center;
+    padding-top: 36px;
+  }
+
+  .site-header {
+    margin-bottom: 28px;
+  }
+
+  .site-header img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 18px;
+  }
+
+  .site-header h1 {
+    font-size: 34px;
+  }
+
+  .links a {
+    min-height: 74px;
+    padding: 14px 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .landing {
+    background:
+      radial-gradient(circle at 18% 8%, rgba(242, 174, 146, 0.05), transparent 28%),
+      radial-gradient(circle at 84% 16%, rgba(143, 207, 192, 0.08), transparent 30%),
+      var(--background);
+  }
+
+  .site-header img {
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .links a,
+  .links .chev {
+    transition: none;
+  }
 }
