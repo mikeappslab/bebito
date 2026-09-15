@@ -1,5 +1,0 @@
-<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-<defs><linearGradient id="mint" x1="310" y1="220" x2="740" y2="750" gradientUnits="userSpaceOnUse"><stop stop-color="#B9F0DA"/><stop offset="1" stop-color="#81D4BB"/></linearGradient></defs>
-<path d="M548 206 C493 218 395 272 333 354 C278 426 252 546 310 636 C367 725 477 754 577 742 C694 729 800 660 791 532 C784 414 695 329 594 289 C550 272 590 229 634 219 C668 211 653 174 621 169 C591 164 573 183 548 206Z" fill="url(#mint)"/>
-<ellipse cx="421" cy="526" rx="38" ry="58" fill="#1D2D3D"/><ellipse cx="649" cy="526" rx="38" ry="58" fill="#1D2D3D"/><circle cx="407" cy="493" r="14" fill="white"/><circle cx="635" cy="493" r="14" fill="white"/><path d="M477 572 C505 616 568 616 596 572" stroke="#1D2D3D" stroke-width="24" stroke-linecap="round"/>
-</svg>
