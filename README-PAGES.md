@@ -2,9 +2,10 @@
 
 Plain static pages — no build step, no JavaScript.
 
-Files: `index.html`, `privacy.html`, `terms.html`, `disclaimer.html`,
-`acknowledgements.html`, `support.html`, `style.css`, logo files and
-`.nojekyll` (tells GitHub Pages to serve the files as-is).
+Files: `index.html`, folder pages (`privacy/`, `terms/`, `disclaimer/`,
+`acknowledgements/`, `support/`), thin `*.html` redirects for old URLs,
+`style.css`, logo files and `.nojekyll` (tells GitHub Pages to serve the
+files as-is).
 
 ## Option A — publish from this repo
 
@@ -22,9 +23,11 @@ Files: `index.html`, `privacy.html`, `terms.html`, `disclaimer.html`,
 
 ## Links for App Store Connect
 
-- Privacy Policy URL: `https://<user>.github.io/<repo>/privacy.html`
-- Terms of Use (EULA) URL: `https://<user>.github.io/<repo>/terms.html`
-- Support URL: `https://<user>.github.io/<repo>/support.html`
+- Privacy Policy URL: `https://<user>.github.io/<repo>/privacy/`
+- Terms of Use (EULA) URL: `https://<user>.github.io/<repo>/terms/`
+- Support URL: `https://<user>.github.io/<repo>/support/`
+
+Old `*.html` URLs still redirect to these folder paths.
 
 ## Keeping the text in sync
 
