@@ -9,5 +9,3 @@ Legal and support pages for [Bebito](https://mikeappslab.github.io/bebito/), a p
 - [Support](https://mikeappslab.github.io/bebito/support/)
 
 Contact: [mikeappslab@gmail.com](mailto:mikeappslab@gmail.com)
-
-Static HTML on GitHub Pages — no build step, no analytics.
