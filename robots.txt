@@ -1,0 +1,26 @@
+# Crawlers only read robots.txt at the domain root. While the site lives at
+# mikeappslab.github.io/bebito/, copy this file to the root of a
+# "mikeappslab.github.io" repository (or a custom domain) for it to apply.
+
+# Search and AI answer engines: allowed so Bebito can be found and cited.
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+Allow: /
+
+# Model training crawlers: allowed. Change to "Disallow: /" to opt out of
+# training without affecting search or AI citations.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mikeappslab.github.io/bebito/sitemap.xml

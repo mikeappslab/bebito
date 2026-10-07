@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mikeappslab.github.io/bebito/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mikeappslab.github.io/bebito/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mikeappslab.github.io/bebito/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mikeappslab.github.io/bebito/" />
+  </url>
+  <url>
+    <loc>https://mikeappslab.github.io/bebito/es/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mikeappslab.github.io/bebito/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mikeappslab.github.io/bebito/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mikeappslab.github.io/bebito/" />
+  </url>
+  <url>
+    <loc>https://mikeappslab.github.io/bebito/support/</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://mikeappslab.github.io/bebito/privacy/</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://mikeappslab.github.io/bebito/terms/</loc>
+    <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://mikeappslab.github.io/bebito/disclaimer/</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://mikeappslab.github.io/bebito/acknowledgements/</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+</urlset>

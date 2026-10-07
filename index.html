@@ -3,35 +3,271 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Bebito — Baby tracker</title>
-<meta name="description" content="Bebito is a private, local-first baby activity tracker. Privacy policy, terms of use and support." />
-<meta property="og:title" content="Bebito — Baby tracker" />
-<meta property="og:description" content="Bebito is a private, local-first baby activity tracker. Privacy policy, terms of use and support." />
+<title>Bebito: Free, Private Baby Tracker for Feeds, Diapers &amp; Sleep</title>
+<meta name="description" content="Bebito is a completely free iPhone baby tracker for feeds, diapers, sleep and growth. No subscription, no account, no ads. Your data stays on your phone." />
+<link rel="canonical" href="https://mikeappslab.github.io/bebito/" />
+<link rel="alternate" hreflang="en" href="https://mikeappslab.github.io/bebito/" />
+<link rel="alternate" hreflang="es" href="https://mikeappslab.github.io/bebito/es/" />
+<link rel="alternate" hreflang="x-default" href="https://mikeappslab.github.io/bebito/" />
+<meta name="apple-itunes-app" content="app-id=6766536961" />
 <meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
+<meta property="og:site_name" content="Bebito" />
+<meta property="og:url" content="https://mikeappslab.github.io/bebito/" />
+<meta property="og:title" content="Bebito: Free, Private Baby Tracker for Feeds, Diapers &amp; Sleep" />
+<meta property="og:description" content="Log feeds, diapers and sleep in seconds. Completely free on iPhone: no subscription, no account, no ads." />
+<meta property="og:image" content="https://mikeappslab.github.io/bebito/images/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Bebito app icon next to screenshots of the baby tracker" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Bebito: Free, Private Baby Tracker for Feeds, Diapers &amp; Sleep" />
+<meta name="twitter:description" content="Log feeds, diapers and sleep in seconds. Completely free on iPhone: no subscription, no account, no ads." />
+<meta name="twitter:image" content="https://mikeappslab.github.io/bebito/images/og-image.jpg" />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="stylesheet" href="style.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mikeappslab.github.io/bebito/#website",
+      "url": "https://mikeappslab.github.io/bebito/",
+      "name": "Bebito",
+      "inLanguage": ["en", "es"],
+      "publisher": { "@id": "https://mikeappslab.github.io/bebito/#developer" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mikeappslab.github.io/bebito/#developer",
+      "name": "Michal Trunek",
+      "email": "mailto:mikeappslab@gmail.com",
+      "url": "https://mikeappslab.github.io/bebito/",
+      "sameAs": ["https://apps.apple.com/gb/developer/michal-trunek/id1817204895"]
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://mikeappslab.github.io/bebito/#app",
+      "name": "Bebito",
+      "alternateName": "Bebito: Baby Tracker",
+      "description": "Bebito is a free baby tracker app for iPhone that helps parents log breastfeeding, bottle feeds, wet and dirty diapers, sleep and growth. Entries stay on the phone, there is no sign-up, and a baby's log can be shared with a partner through iCloud.",
+      "url": "https://mikeappslab.github.io/bebito/",
+      "downloadUrl": "https://apps.apple.com/app/bebito/id6766536961",
+      "installUrl": "https://apps.apple.com/app/bebito/id6766536961",
+      "sameAs": ["https://apps.apple.com/app/bebito/id6766536961"],
+      "image": "https://mikeappslab.github.io/bebito/apple-touch-icon.png",
+      "screenshot": [
+        "https://mikeappslab.github.io/bebito/images/screenshot-quick-log.webp",
+        "https://mikeappslab.github.io/bebito/images/screenshot-partner-sync.webp",
+        "https://mikeappslab.github.io/bebito/images/screenshot-weekly-journal.webp",
+        "https://mikeappslab.github.io/bebito/images/screenshot-growth-chart.webp"
+      ],
+      "operatingSystem": "iOS 17.6 or later",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "Baby tracker",
+      "inLanguage": ["en", "es"],
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://mikeappslab.github.io/bebito/#developer" },
+      "publisher": { "@id": "https://mikeappslab.github.io/bebito/#developer" },
+      "featureList": [
+        "Quick logging for breastfeeding, bottle feeds, wet and dirty diapers",
+        "Breast side tracking",
+        "Sleep timer with Lock Screen Live Activity",
+        "Night sleep hours and awake window reminders",
+        "Weight and height charts based on the WHO Child Growth Standards",
+        "Daily timeline and weekly journal",
+        "Pediatrician checkup summary (PDF)",
+        "Partner Sync through iCloud",
+        "Home Screen and Lock Screen widgets",
+        "iCloud Drive backup, CSV and JSON export",
+        "CSV import from Huckleberry and other baby trackers",
+        "Multiple babies, metric or imperial units, English and Spanish"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mikeappslab.github.io/bebito/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Bebito free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Bebito is free to download and use. There are no ads, no subscriptions and no in-app purchases." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to create an account?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Bebito has no sign-up and no login. You add your baby's name, sex and birth date on the phone and start logging straight away." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Bebito work offline?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every entry is saved on your iPhone first, so logging works without a connection. Optional Partner Sync and iCloud Backup catch up in the background when you are back online." }
+        },
+        {
+          "@type": "Question",
+          "name": "How can two parents share the same baby log?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Turn on Partner Sync and send an invitation through Apple's iCloud sharing sheet. Sharing is per baby, and both parents can add and edit feeds, sleep, diapers and weight. Partner Sync needs iCloud on both iPhones." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I move my data from Huckleberry or another baby tracker?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Export a CSV file from your old app, then choose Settings, Import from another app in Bebito. The import creates a new baby profile and never changes your existing logs." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which growth charts does Bebito use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Weight and height are plotted against the WHO Child Growth Standards, with percentile curves from the 3rd to the 97th. The charts are a reference for conversations with your pediatrician, not a diagnosis." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I track twins or more than one baby?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can add several babies, switch between them, and run a separate sleep timer for each one at the same time." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which devices and languages does Bebito support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Bebito runs on iPhone with iOS 17.6 or later. The app is available in English and Spanish, with metric or imperial units and 12- or 24-hour time." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Bebito a medical device?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Bebito is for personal tracking only and does not diagnose or treat any condition. Always ask your pediatrician about your baby's health." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this the same app as “Bebito: Baby & Newborn Tracker”?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. That is a separate app from a different developer. This Bebito is made by Michal Trunek, has the App Store ID 6766536961, and is completely free with no subscription or Pro tier." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
-<body class="landing">
+<body class="landing home">
 <div class="wrap">
 <header class="site-header">
   <img src="bebito-app-icon.webp" alt="Bebito app icon" width="128" height="128" />
   <h1>Bebito</h1>
-  <p>A gentle, private baby activity tracker for feeds, diapers and sleep.</p>
+  <p class="tagline">A private baby tracker for iPhone. Log feeds, diapers and sleep in seconds. Completely free, with no subscription, no account and no ads.</p>
+  <a class="store-badge" href="https://apps.apple.com/app/bebito/id6766536961">
+    <picture>
+      <source srcset="images/app-store-badge-en-us-white.svg" media="(prefers-color-scheme: dark)" />
+      <img src="images/app-store-badge-en-us-black.svg" alt="Download Bebito on the App Store" width="150" height="50" />
+    </picture>
+  </a>
+  <p class="meta-line">Free · iPhone · English &amp; Español</p>
 </header>
+
 <main>
-<nav class="card" aria-label="Bebito information">
-  <ul class="links">
-    <li><a href="privacy/"><span class="link-copy"><span class="label">Privacy Policy</span><span class="desc">What happens to the information you enter</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
-    <li><a href="terms/"><span class="link-copy"><span class="label">Terms of Use</span><span class="desc">The terms that apply when you use the app</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
-    <li><a href="disclaimer/"><span class="link-copy"><span class="label">Medical Disclaimer</span><span class="desc">Bebito is not a medical device</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
-    <li><a href="acknowledgements/"><span class="link-copy"><span class="label">Acknowledgements</span><span class="desc">Open-source libraries and reference data</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
-    <li><a href="support/"><span class="link-copy"><span class="label">Support</span><span class="desc">Get help or report a problem</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
-  </ul>
-</nav>
+<section class="card intro" aria-labelledby="what-is">
+  <div class="body">
+    <h2 id="what-is">What is Bebito?</h2>
+    <p>Bebito is a free baby tracker app for iPhone that helps parents log breastfeeding, bottle feeds, wet and dirty diapers, sleep and growth. Entries stay on your phone, there is no sign-up, and you can share a baby's log with your partner through iCloud.</p>
+  </div>
+</section>
+
+<section class="shots" aria-label="Bebito screenshots">
+  <img src="images/screenshot-quick-log.webp" width="460" height="999" loading="lazy" alt="Bebito Home Screen widget showing time since the last feed, and a sleep timer on the Lock Screen" />
+  <img src="images/screenshot-partner-sync.webp" width="460" height="999" loading="lazy" alt="Bebito day summary with night sleep, naps, feeds, pees, poos and growth, plus a timeline" />
+  <img src="images/screenshot-weekly-journal.webp" width="460" height="999" loading="lazy" alt="Bebito weekly journal showing sleep, feeds and diapers for each day of the week" />
+  <img src="images/screenshot-growth-chart.webp" width="460" height="999" loading="lazy" alt="Bebito weight-for-age chart with WHO Child Growth Standards percentile curves" />
+</section>
+
+<section aria-labelledby="features">
+  <h2 class="section-title" id="features">What you can track</h2>
+  <div class="card">
+    <div class="body features">
+      <h3>Feeds and diapers in one tap</h3>
+      <p>Quick Log records breastfeeding with left or right side, bottle amounts, and wet or dirty diapers. You can keep logging feeds while a sleep timer is running.</p>
+      <h3>Sleep timer, night sleep and awake windows</h3>
+      <p>Start a sleep timer that also shows on the Lock Screen and Dynamic Island. Set your night hours and get a gentle reminder before an awake window ends.</p>
+      <h3>Growth charts based on WHO standards</h3>
+      <p>Weight and height are plotted against the WHO Child Growth Standards so you can see how your baby is growing over the weeks.</p>
+      <h3>Daily timeline and weekly journal</h3>
+      <p>See every feed, diaper and nap on a clear timeline, and spot routines across the week.</p>
+      <h3>Checkup summary for the pediatrician</h3>
+      <p>Create a PDF with the last two weeks of feeds, diapers, sleep and growth, plus your questions for the doctor.</p>
+      <h3>Share with your partner</h3>
+      <p>Partner Sync uses Apple's iCloud sharing, so both parents can log the same baby in real time.</p>
+      <h3>Widgets, backup and import</h3>
+      <p>Home Screen and Lock Screen widgets, automatic iCloud Drive backup, CSV and JSON export, and CSV import from Huckleberry and other baby trackers.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="privacy">
+  <h2 class="section-title" id="privacy">Private by design</h2>
+  <div class="card">
+    <div class="body">
+      <p>Your baby's data stays on your iPhone. Bebito has <strong>no account, no analytics, no ads and no tracking</strong>, and we don't run servers that receive your entries. Partner Sync and iCloud Backup are optional and use your own iCloud. Read the <a href="privacy/">privacy policy</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="story">
+  <h2 class="section-title" id="story">Why we built Bebito</h2>
+  <div class="card">
+    <div class="body">
+      <blockquote>
+        <p>“After bringing our first baby home from the hospital, we needed a simple way to track the essentials: feeds, wet diapers and dirty diapers. So we built Bebito.”</p>
+        <footer>Michal Trunek, parent and maker of Bebito</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="faq">
+  <h2 class="section-title" id="faq">Frequently asked questions</h2>
+  <div class="card">
+    <div class="body faq">
+      <h3>Is Bebito free?</h3>
+      <p>Yes. Bebito is free to download and use. There are no ads, no subscriptions and no in-app purchases.</p>
+      <h3>Do I need to create an account?</h3>
+      <p>No. Bebito has no sign-up and no login. You add your baby's name, sex and birth date on the phone and start logging straight away.</p>
+      <h3>Does Bebito work offline?</h3>
+      <p>Yes. Every entry is saved on your iPhone first, so logging works without a connection. Optional Partner Sync and iCloud Backup catch up in the background when you are back online.</p>
+      <h3>How can two parents share the same baby log?</h3>
+      <p>Turn on Partner Sync and send an invitation through Apple's iCloud sharing sheet. Sharing is per baby, and both parents can add and edit feeds, sleep, diapers and weight. Partner Sync needs iCloud on both iPhones.</p>
+      <h3>Can I move my data from Huckleberry or another baby tracker?</h3>
+      <p>Yes. Export a CSV file from your old app, then choose Settings, Import from another app in Bebito. The import creates a new baby profile and never changes your existing logs.</p>
+      <h3>Which growth charts does Bebito use?</h3>
+      <p>Weight and height are plotted against the WHO Child Growth Standards, with percentile curves from the 3rd to the 97th. The charts are a reference for conversations with your pediatrician, not a diagnosis.</p>
+      <h3>Can I track twins or more than one baby?</h3>
+      <p>Yes. You can add several babies, switch between them, and run a separate sleep timer for each one at the same time.</p>
+      <h3>Which devices and languages does Bebito support?</h3>
+      <p>Bebito runs on iPhone with iOS 17.6 or later. The app is available in English and Spanish, with metric or imperial units and 12- or 24-hour time.</p>
+      <h3>Is Bebito a medical device?</h3>
+      <p>No. Bebito is for personal tracking only and does not diagnose or treat any condition. Always ask your pediatrician about your baby's health. See the <a href="disclaimer/">medical disclaimer</a>.</p>
+      <h3>Is this the same app as “Bebito: Baby &amp; Newborn Tracker”?</h3>
+      <p>No. That is a separate app from a different developer. This Bebito is made by Michal Trunek, has the App Store ID 6766536961, and is completely free with no subscription or Pro tier.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="help">
+  <h2 class="section-title" id="help">Help and legal</h2>
+  <nav class="card" aria-labelledby="help">
+    <ul class="links">
+      <li><a href="support/"><span class="link-copy"><span class="label">Support</span><span class="desc">Get help or report a problem</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
+      <li><a href="privacy/"><span class="link-copy"><span class="label">Privacy Policy</span><span class="desc">What happens to the information you enter</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
+      <li><a href="terms/"><span class="link-copy"><span class="label">Terms of Use</span><span class="desc">The terms that apply when you use the app</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
+      <li><a href="disclaimer/"><span class="link-copy"><span class="label">Medical Disclaimer</span><span class="desc">Bebito is not a medical device</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
+      <li><a href="acknowledgements/"><span class="link-copy"><span class="label">Acknowledgements</span><span class="desc">Open-source libraries and reference data</span></span><span class="chev" aria-hidden="true">&rsaquo;</span></a></li>
+    </ul>
+  </nav>
+</section>
 </main>
-<footer>&copy; 2026 Bebito · <a href="mailto:mikeappslab@gmail.com">mikeappslab@gmail.com</a></footer>
+
+<footer>
+  <p><a href="es/" hreflang="es" lang="es">Leer en español</a></p>
+  <p>&copy; 2026 Bebito · <a href="mailto:mikeappslab@gmail.com">mikeappslab@gmail.com</a></p>
+  <p>Last updated <time datetime="2026-10-07">7 October 2026</time></p>
+</footer>
 </div>
 </body>
 </html>

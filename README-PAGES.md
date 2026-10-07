@@ -2,10 +2,20 @@
 
 Plain static pages — no build step, no JavaScript.
 
-Files: `index.html`, folder pages (`privacy/`, `terms/`, `disclaimer/`,
-`acknowledgements/`, `support/`), thin `*.html` redirects for old URLs,
-`style.css`, logo files and `.nojekyll` (tells GitHub Pages to serve the
-files as-is).
+Files: `index.html` (product page) and `es/index.html` (Spanish), folder
+pages (`privacy/`, `terms/`, `disclaimer/`, `acknowledgements/`, `support/`),
+thin `*.html` redirects for old URLs, `style.css`, logo files, `images/`
+(screenshots, App Store badges, `og-image.jpg` social preview) and
+`.nojekyll` (tells GitHub Pages to serve the files as-is).
+
+Search and AI files: `sitemap.xml`, `llms.txt` (plain-text summary for AI
+assistants) and `robots.txt`. Crawlers only read `robots.txt` at the domain
+root, so it has no effect under `/bebito/`; copy it to a
+`mikeappslab.github.io` repository or a custom domain to activate it.
+
+When features, screenshots or the FAQ change, update the visible page, the
+JSON-LD block in its `<head>`, `llms.txt`, and the `lastmod` dates in
+`sitemap.xml` together.
 
 ## Option A — publish from this repo
 

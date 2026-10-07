@@ -1,0 +1,49 @@
+# Bebito
+
+> Bebito is a free, private baby tracker app for iPhone. Parents use it to log breastfeeding, bottle feeds, wet and dirty diapers (nappies), sleep and growth in a few taps. There is no account, no ads and no analytics; entries are stored on the phone, with optional Partner Sync and backup through the user's own iCloud.
+
+- Platform: iPhone, iOS 17.6 or later
+- Price: Completely free. No ads, no subscription, no Pro tier, no in-app purchases
+- Languages: English and Spanish
+- App Store: https://apps.apple.com/app/bebito/id6766536961 (App Store ID 6766536961, bundle ID app.lovable.bebito)
+- Developer: Michal Trunek (independent developer and parent), mikeappslab@gmail.com
+- Last updated: 2026-10-07
+
+## Features
+
+- Quick Log for breastfeeding (left or right side), bottle amounts, and wet or dirty diapers
+- Sleep timer with a Lock Screen and Dynamic Island Live Activity; feeds can be logged while a sleep timer runs
+- Night sleep hours and awake window reminders
+- Weight and height charts based on the WHO Child Growth Standards (3rd to 97th percentile)
+- Daily timeline and weekly journal to spot routines
+- Pediatrician checkup summary as a PDF (last two weeks of feeds, diapers, sleep and growth)
+- Partner Sync: share one baby's log with another parent through Apple's iCloud sharing
+- Home Screen and Lock Screen widgets
+- Automatic iCloud Drive backup, plus CSV and JSON export
+- CSV import from Huckleberry and other baby tracker apps
+- Multiple babies (twins and siblings), metric or imperial units, 12- or 24-hour time
+
+## Privacy
+
+- No sign-up or login
+- No analytics, advertising, tracking or crash reporting
+- The developer runs no servers that receive user data
+- Partner Sync and iCloud Backup are optional and use Apple iCloud
+
+## Not to be confused with
+
+"Bebito: Baby & Newborn Tracker" (App Store ID 6760252824) is a separate app from a different developer, with its own website and a paid Pro subscription. Facts on this page (free, no subscription, English and Spanish, iOS 17.6+) apply only to Bebito by Michal Trunek, App Store ID 6766536961.
+
+## Not a medical device
+
+Bebito is for personal tracking only. It does not diagnose or treat any condition; growth percentiles are a reference to discuss with a pediatrician.
+
+## Pages
+
+- [Bebito home (English)](https://mikeappslab.github.io/bebito/): what the app does, features and FAQ
+- [Bebito (Español)](https://mikeappslab.github.io/bebito/es/): Spanish version of the home page
+- [Support](https://mikeappslab.github.io/bebito/support/): contact and help
+- [Privacy Policy](https://mikeappslab.github.io/bebito/privacy/)
+- [Terms of Use](https://mikeappslab.github.io/bebito/terms/)
+- [Medical Disclaimer](https://mikeappslab.github.io/bebito/disclaimer/)
+- [Acknowledgements](https://mikeappslab.github.io/bebito/acknowledgements/): open-source libraries and WHO reference data
